@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Web Store</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Exercise 3: Web Store</h1>
+            <p>Enter in your account information then place your order.</p>
+        </header>
+
+        <main>
+			<div id="background"></div>
+			<form action="customerBackend.html" method="post">
+                <b>Enter in your information:</b><br>
+					Username: <input type="text" name="username" id="username"><br>
+					Password: <input type="text" name="password" id="password"><br><br>
+				<b>GPUs:</b><br>
+                    Nvidia GeForce RTX 3080, $5,550.99<br> 
+					Quantity: <input type="number" id="n80" name="n80" min="0"><br><br>
+
+					AMD Radeon RX 6800 XT, $3,500.00<br> 
+					Quantity: <input type="number" id="r68" name="r68" min="0"><br><br>
+
+					Nvidia GeForce RTX 3060 Ti, $4,999.00<br> 
+					Quantity: <input type="number" id="n60" name="n60" min="0"><br><br>
+                    
+				<b>Choose your shipping option:</b><br>
+					<input type="radio" name="shipping" id="free" value="Free 7 Day">Free 7 Day<br>
+					<input type="radio" name="shipping" id="50" value="$50 Over Night">$50.00 Over Night<br>
+					<input type="radio" name="shipping" id="5" value="$5 Three Day">$5.00 Three Day<br>
+				<input type="submit" id="submit" value="Submit Quiz">
+				<input type="reset">
+			</form>
+        </main>
+        <script src="formChecker.js"></script>
+    </body>
+</html>
